@@ -1,0 +1,53 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B7081A1-36BB-4999-95D0-5B6AAAD1D1D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.EasyAuthDemo.Api", "src\Benday.EasyAuthDemo.Api\Benday.EasyAuthDemo.Api.csproj", "{35496D09-41D4-44CA-8BB4-EE0B029CF66E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3B84AFDF-294D-4D2E-9C1D-B7FA74632426}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.EasyAuthDemo.UnitTests", "test\Benday.EasyAuthDemo.UnitTests\Benday.EasyAuthDemo.UnitTests.csproj", "{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.EasyAuthDemo.WebUi", "src\Benday.EasyAuthDemo.WebUi\Benday.EasyAuthDemo.WebUi.csproj", "{7E1ADACE-766B-47CB-9A05-912F3C825583}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.EasyAuthDemo.IntegrationTests", "test\Benday.EasyAuthDemo.IntegrationTests\Benday.EasyAuthDemo.IntegrationTests.csproj", "{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35496D09-41D4-44CA-8BB4-EE0B029CF66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35496D09-41D4-44CA-8BB4-EE0B029CF66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35496D09-41D4-44CA-8BB4-EE0B029CF66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35496D09-41D4-44CA-8BB4-EE0B029CF66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1ADACE-766B-47CB-9A05-912F3C825583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1ADACE-766B-47CB-9A05-912F3C825583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1ADACE-766B-47CB-9A05-912F3C825583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1ADACE-766B-47CB-9A05-912F3C825583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35496D09-41D4-44CA-8BB4-EE0B029CF66E} = {2B7081A1-36BB-4999-95D0-5B6AAAD1D1D1}
+		{1D02DE94-47C0-49B5-BFD7-0A1E2C8765E8} = {3B84AFDF-294D-4D2E-9C1D-B7FA74632426}
+		{7E1ADACE-766B-47CB-9A05-912F3C825583} = {2B7081A1-36BB-4999-95D0-5B6AAAD1D1D1}
+		{112A0D24-6FC7-475C-A5B1-AA4E8C2DE2FD} = {3B84AFDF-294D-4D2E-9C1D-B7FA74632426}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBFD1031-15E5-4F23-95C2-1BF51201EFF7}
+	EndGlobalSection
+EndGlobal

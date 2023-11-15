@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing"
+      Version="7.0.*" />    
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.*" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.*" />
+    <PackageReference Include="coverlet.collector" Version="6.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference
+      Include="..\..\src\Benday.EasyAuthDemo.Api\Benday.EasyAuthDemo.Api.csproj" />
+    <ProjectReference
+      Include="..\Benday.EasyAuthDemo.UnitTests\Benday.EasyAuthDemo.UnitTests.csproj" />
+    <ProjectReference
+      Include="..\..\src\Benday.EasyAuthDemo.WebUi\Benday.EasyAuthDemo.WebUi.csproj" />
+  </ItemGroup>
+
+</Project>
