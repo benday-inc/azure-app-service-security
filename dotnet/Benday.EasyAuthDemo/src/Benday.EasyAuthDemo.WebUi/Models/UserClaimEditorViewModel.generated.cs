@@ -23,6 +23,24 @@ namespace Benday.EasyAuthDemo.WebUi.Models
         [Display(Name = "claim name")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string ClaimName { get; set; }
+		
+		 private List<SelectListItem> _ClaimNames;
+        public List<SelectListItem> ClaimNames
+        {
+            get
+            {
+                if (_ClaimNames == null)
+                {
+                    _ClaimNames = new List<SelectListItem>();
+                }
+                
+                return _ClaimNames;
+            }
+            set
+            {
+                _ClaimNames = value;
+            }
+        }
         
         [Display(Name = "claim value")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]

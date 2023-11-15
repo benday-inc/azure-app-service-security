@@ -9,49 +9,75 @@ SELECT @me = '(setup)';
 MERGE INTO [Lookup] AS Target
 USING (
 	VALUES
-(
-		100, 
-		'System.Lookup.Types', 
+	(
+		100,
+		'System.Lookup.Types',
 		'System.Lookup.Types',
 		'Lookup Types',
-		10, 
-		'ACTIVE', 
-		@me, @now, 
+		10,
+		'ACTIVE',
+		@me, @now,
 		@me, @now	
 ),
 
-(
-		200, 
-		'System.Lookup.Types', 
+	(
+		200,
+		'System.Lookup.Types',
 		'System.Lookup.StatusValues',
 		'Status Values',
-		20, 
-		'ACTIVE', 
-		@me, @now, 
+		20,
+		'ACTIVE',
+		@me, @now,
 		@me, @now	
 ),
 
-(
-		11200, 
-		'System.Lookup.StatusValues', 
+	(
+		11200,
+		'System.Lookup.StatusValues',
 		'Active',
 		'Active',
-		0, 
-		'ACTIVE', 
-		@me, @now, 
+		0,
+		'ACTIVE',
+		@me, @now,
 		@me, @now	
 ),
 
-(
-		11300, 
-		'System.Lookup.StatusValues', 
-		'Inactive',
-		'Inactive',
-		0, 
-		'ACTIVE', 
-		@me, @now, 
+	(
+		1010,
+		'System.Lookup.Types',
+		'System.UserClaim.PermissionTypes',
+		'Permission Types',
+		50,
+		'ACTIVE',
+		@me, @now,
 		@me, @now	
-))
+	),
+
+
+	(
+		11300,
+		'System.Lookup.StatusValues',
+		'Inactive',
+		'Inactive',
+		0,
+		'ACTIVE',
+		@me, @now,
+		@me, @now	
+),
+	(
+		200123,
+		'System.UserClaim.PermissionTypes',
+		'role',
+		'Role',
+		0,
+		'ACTIVE',
+		@me, @now,
+		@me, @now	
+	)
+
+
+
+)
 
 AS Source (Id, LookupType, LookupKey, LookupValue, DisplayOrder, Status, CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate)
 ON Target.Id = Source.Id

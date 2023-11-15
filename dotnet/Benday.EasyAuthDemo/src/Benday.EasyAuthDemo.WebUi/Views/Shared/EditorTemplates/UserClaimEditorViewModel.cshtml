@@ -1,7 +1,10 @@
 @model Benday.EasyAuthDemo.WebUi.Models.UserClaimEditorViewModel
     <tr id="@Html.Id("row")">
     @Html.HiddenFor(model => model.IsMarkedForDelete)
-    @Html.HiddenFor(model => model.IsSelected)
+        <td>
+        @Html.CheckBoxFor(model => model.IsSelected)
+        </td>
+    @Html.HiddenFor(model => model.Id)
         <td>
             <input asp-for="@Model.Username" class="form-control" />
             <span asp-validation-for="@Model.Username" class="text-danger">
@@ -9,11 +12,13 @@
         </td>
     
         <td>
-            <input asp-for="@Model.ClaimName" class="form-control" />
-            <span asp-validation-for="@Model.ClaimName" class="text-danger">
+            <select asp-for="ClaimName" asp-items="Model.ClaimNames" class="form-control">
+            </select>
+            <span asp-validation-for="ClaimName" class="text-danger">
+            </span>
+            <span asp-validation-for="@Model.ClaimName">
             </span>
         </td>
-    
         <td>
             <input asp-for="@Model.ClaimValue" class="form-control" />
             <span asp-validation-for="@Model.ClaimValue" class="text-danger">
@@ -41,7 +46,6 @@
             </span>
         </td>
     
-    @Html.HiddenFor(model => model.Id)
     @Html.HiddenFor(model => model.Status)
     @Html.HiddenFor(model => model.CreatedBy)
     @Html.HiddenFor(model => model.CreatedDate)
@@ -56,3 +60,4 @@
             id="@Html.Id("deleteUndeleteButton")">delete</button>
             </td>
         </tr>
+    
