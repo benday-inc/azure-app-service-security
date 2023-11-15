@@ -1,11 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <!--<PackageReference Include="Benday.EfCore.SqlServer" Version="7.0.0" />-->
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
@@ -16,7 +13,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Benday.EfCore.SqlServer\Benday.EfCore.SqlServer.csproj" />
     <ProjectReference Include="..\..\src\Benday.EasyAuthDemo.Api\Benday.EasyAuthDemo.Api.csproj" />
